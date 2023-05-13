@@ -47,7 +47,7 @@ class Model():
                 (x, y, w, h) = faces[0]
                 face_cropped = frame[y:y+h, x:x+w]
                 face_cropped = cv2.resize(face_cropped, (224, 224))
-                face_cropped = face_cropped / 225
+                face_cropped = face_cropped / 255
                 prediction = self.predict(face_cropped)
                 for i in range(len(self.face_features_list)):
                     cosine = distance.cosine(self.face_features_list[i], prediction)
