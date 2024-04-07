@@ -1,1 +1,1 @@
-
+This project uses the VGG-16 pre-trained model accesible to the public through PyTorch. The model is used for extracting features from the image of the face, and then uses cosine similarity to identify whether the identity already exists in our database. Capturing of the image of the face is done through OpenCV. Database is maintained through MySQL. UI of the application has been made using python and images from the internet.
